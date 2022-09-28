@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: ddeeff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.neural_networks.Controller">
+   <children>
+      <AnchorPane layoutX="82.0" layoutY="148.0" prefHeight="32.0" prefWidth="32.0" style="-fx-background-color: #ffff;" />
+      <Canvas fx:id="canvas" height="32.0" layoutX="83.0" layoutY="149.0" style="-fx-background-color: #ffff; visibility: #ffff;" width="32.0" />
+      <AnchorPane layoutX="212.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffff;">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.719298243522644" green="0.719298243522644" blue="0.719298243522644" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Text layoutX="62.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Результаты" />
+            <TextArea fx:id="result" layoutX="10.0" layoutY="27.0" prefHeight="163.0" prefWidth="180.0" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="save" layoutX="46.0" layoutY="300.0" mnemonicParsing="false" text="Сохранить" />
+      <Text layoutX="57.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Рисовать тут:" />
+      <Button fx:id="go" layoutX="256.0" layoutY="331.0" mnemonicParsing="false" text="Распознать" />
+      <ToggleButton fx:id="drowbtn" layoutX="46.0" layoutY="213.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="105.0" text="Рисовать" />
+      <Button fx:id="punish" layoutX="422.0" layoutY="148.0" mnemonicParsing="false" text="Наказать" />
+      <Text layoutX="197.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Однослойная нейронная сеть">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Button fx:id="erase" layoutX="46.0" layoutY="260.0" mnemonicParsing="false" text="Стереть" />
+      <ChoiceBox fx:id="choice" layoutX="422.0" layoutY="191.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
